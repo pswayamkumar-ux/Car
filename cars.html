@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our premium fleet of rental cars - Economy, SUV, Luxury, and Sports vehicles available.">
+    <title>Our Cars - Rideez Car Rental</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23f59e0b'/><text x='50' y='65' font-size='40' text-anchor='middle' fill='white'>R</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <span class="logo-text">Ride<span>ez</span></span>
+                </a>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="cars.html" class="nav-link active">Our Cars</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                
+                <div class="header-cta">
+                    <a href="tel:+1234567890" class="header-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 234 567 890</span>
+                    </a>
+                    <a href="cars.html" class="btn btn-primary">Book Now</a>
+                </div>
+                
+                <button id="menuBtn" class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div id="mobileMenu" class="mobile-menu">
+            <div class="mobile-menu-header">
+                <span class="logo-text">Ride<span>ez</span></span>
+                <button id="closeMenu" class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="cars.html" class="mobile-nav-link active">Our Cars</a>
+                <a href="services.html" class="mobile-nav-link">Services</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="cars.html" class="btn btn-primary" style="margin-top: 1rem;">Book Now</a>
+            </nav>
+        </div>
+        <div id="mobileMenuOverlay" class="mobile-menu-overlay"></div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero gradient-bg">
+        <div class="container">
+            <h1 class="page-hero-title">Our Cars</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <i class="fas fa-chevron-right"></i>
+                <span>Our Cars</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section style="background: var(--gray-50); padding: 3rem 0;">
+        <div class="container">
+            <div class="booking-form" style="max-width: 100%;">
+                <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--text-dark);">Find Your Perfect Car</h3>
+                <form class="booking-form-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; align-items: end;">
+                    <div class="form-group">
+                        <label>Pick-up Location</label>
+                        <div class="form-input-wrapper">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <input type="text" class="form-input" placeholder="City or Airport">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Pick-up Date</label>
+                        <div class="form-input-wrapper">
+                            <i class="fas fa-calendar"></i>
+                            <input type="date" class="form-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Return Date</label>
+                        <div class="form-input-wrapper">
+                            <i class="fas fa-calendar"></i>
+                            <input type="date" class="form-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Car Type</label>
+                        <div class="form-input-wrapper">
+                            <i class="fas fa-car"></i>
+                            <select class="form-input">
+                                <option>All Types</option>
+                                <option>Economy</option>
+                                <option>SUV</option>
+                                <option>Luxury</option>
+                                <option>Sports</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="height: fit-content;">
+                        <i class="fas fa-search" style="margin-right: 0.5rem;"></i> Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cars Section -->
+    <section class="section-padding" style="background: var(--white);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <span class="section-badge">Our Fleet</span>
+                <h2 class="section-title">Explore Our Premium Cars</h2>
+                <p class="section-description">
+                    Choose from our wide selection of premium vehicles. Each car is thoroughly inspected 
+                    and maintained to ensure your safety and comfort.
+                </p>
+            </div>
+            
+            <!-- Car Filters -->
+            <div class="car-filters">
+                <button class="filter-btn active" data-filter="all">All Cars</button>
+                <button class="filter-btn" data-filter="economy">Economy</button>
+                <button class="filter-btn" data-filter="suv">SUV</button>
+                <button class="filter-btn" data-filter="luxury">Luxury</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+            </div>
+            
+            <!-- Cars Grid -->
+            <div class="cars-grid">
+                <!-- Car Card 1 -->
+                <div class="car-card card card-hover" data-category="economy">
+                    <div class="car-card-image">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500" alt="Toyota Camry">
+                        <span class="car-card-badge popular">Popular</span>
+                    </div>
+                    <div class="car-card-content">
+                        <div class="car-card-header">
+                            <div>
+                                <h3 class="car-card-title">Toyota Camry</h3>
+                                <p class="car-card-type">Economy Sedan</p>
+                            </div>
+                            <div class="car-card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <div class="car-card-features">
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="car-card-footer">
+                            <div class="car-card-price">$45<span>/day</span></div>
+                            <button class="btn btn-primary">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 2 -->
+                <div class="car-card card card-hover" data-category="suv">
+                    <div class="car-card-image">
+                        <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=500" alt="Honda CR-V">
+                    </div>
+                    <div class="car-card-content">
+                        <div class="car-card-header">
+                            <div>
+                                <h3 class="car-card-title">Honda CR-V</h3>
+                                <p class="car-card-type">Compact SUV</p>
+                            </div>
+                            <div class="car-card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <div class="car-card-features">
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="car-card-footer">
+                            <div class="car-card-price">$65<span>/day</span></div>
+                            <button class="btn btn-primary">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 3 -->
+                <div class="car-card card card-hover" data-category="luxury">
+                    <div class="car-card-image">
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=500" alt="BMW 5 Series">
+                        <span class="car-card-badge premium">Premium</span>
+                    </div>
+                    <div class="car-card-content">
+                        <div class="car-card-header">
+                            <div>
+                                <h3 class="car-card-title">BMW 5 Series</h3>
+                                <p class="car-card-type">Luxury Sedan</p>
+                            </div>
+                            <div class="car-card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <div class="car-card-features">
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="car-card-footer">
+                            <div class="car-card-price">$120<span>/day</span></div>
+                            <button class="btn btn-primary">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 4 -->
+                <div class="car-card card card-hover" data-category="sports">
+                    <div class="car-card-image">
+                        <img src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=500" alt="Porsche 911">
+                        <span class="car-card-badge sports">Sports</span>
+                    </div>
+                    <div class="car-card-content">
+                        <div class="car-card-header">
+                            <div>
+                                <h3 class="car-card-title">Porsche 911</h3>
+                                <p class="car-card-type">Sports Car</p>
+                            </div>
+                            <div class="car-card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <div class="car-card-features">
+                            <span><i class="fas fa-users"></i> 2 Seats</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="car-card-footer">
+                            <div class="car-card-price">$250<span>/day</span></div>
+                            <button class="btn btn-primary">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 5 -->
+                <div class="car-card card card-hover" data-category="suv">
+                    <div class="car-card-image">
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=500" alt="Mercedes GLE">
+                        <span class="car-card-badge premium">Premium</span>
+                    </div>
+                    <div class="car-card-content">
+                        <div class="car-card-header">
+                            <div>
+                                <h3 class="car-card-title">Mercedes GLE</h3>
+                                <p class="car-card-type">Luxury SUV</p>
+                            </div>
+                            <div class="car-card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <div class="car-card-features">
+                            <span><i class="fas fa-users"></i> 7 Seats</span>
+                            <span><i class="fas fa-gas-pump"></i> Diesel</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="car-card-footer">
+                            <div class="car-card-price">$150<span>/day</span></div>
+                            <button class="btn btn-primary">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 6 -->
+                <div class="car-card card card-hover" data-category="economy">
+                    <div class="car-card-image">
+                        <img src="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=500" alt="Nissan Altima">
+                    </div>
+                    <div class="car-card-content">
+                        <div class="car-card-header">
+                            <div>
+                                <h3 class="car-card-title">Nissan Altima</h3>
+                                <p class="car-card-type">Economy Sedan</p>
+                            </div>
+                            <div class="car-card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <div class="car-card-features">
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="car-card-footer">
+                            <div class="car-card-price">$40<span>/day</span></div>
+                            <button class="btn btn-primary">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 7 -->
+                <div class="car-card card card-hover" data-category="luxury">
+                    <div class="car-card-image">
+                        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=500" alt="Mercedes S-Class">
+                        <span class="car-card-badge premium">Premium</span>
+                    </div>
+                    <div class="car-card-content">
+                        <div class="car-card-header">
+                            <div>
+                                <h3 class="car-card-title">Mercedes S-Class</h3>
+                                <p class="car-card-type">Luxury Sedan</p>
+                            </div>
+                            <div class="car-card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <div class="car-card-features">
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="car-card-footer">
+                            <div class="car-card-price">$180<span>/day</span></div>
+                            <button class="btn btn-primary">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 8 -->
+                <div class="car-card card card-hover" data-category="sports">
+                    <div class="car-card-image">
+                        <img src="https://images.unsplash.com/photo-1580274455191-1c62238fa333?w=500" alt="Ford Mustang">
+                        <span class="car-card-badge sports">Sports</span>
+                    </div>
+                    <div class="car-card-content">
+                        <div class="car-card-header">
+                            <div>
+                                <h3 class="car-card-title">Ford Mustang</h3>
+                                <p class="car-card-type">Sports Car</p>
+                            </div>
+                            <div class="car-card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <div class="car-card-features">
+                            <span><i class="fas fa-users"></i> 4 Seats</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="car-card-footer">
+                            <div class="car-card-price">$180<span>/day</span></div>
+                            <button class="btn btn-primary">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 9 -->
+                <div class="car-card card card-hover" data-category="suv">
+                    <div class="car-card-image">
+                        <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=500" alt="Toyota RAV4">
+                        <span class="car-card-badge popular">Popular</span>
+                    </div>
+                    <div class="car-card-content">
+                        <div class="car-card-header">
+                            <div>
+                                <h3 class="car-card-title">Toyota RAV4</h3>
+                                <p class="car-card-type">Compact SUV</p>
+                            </div>
+                            <div class="car-card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <div class="car-card-features">
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-gas-pump"></i> Hybrid</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="car-card-footer">
+                            <div class="car-card-price">$70<span>/day</span></div>
+                            <button class="btn btn-primary">Rent Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding gradient-bg cta-section">
+        <div class="cta-bg-effects">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Can't Find What You're Looking For?</h2>
+                <p class="cta-description">
+                    Contact us and we'll help you find the perfect vehicle for your needs.
+                </p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i> Contact Us
+                    </a>
+                    <a href="tel:+1234567890" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone" style="margin-right: 0.5rem;"></i> Call Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer gradient-bg">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <div class="logo-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <span class="logo-text">Ride<span>ez</span></span>
+                    </a>
+                    <p>Your trusted partner for premium car rental services. Experience the freedom of the road with our wide selection of quality vehicles.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="cars.html">Our Cars</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4>Car Types</h4>
+                    <div class="footer-links">
+                        <a href="cars.html">Economy Cars</a>
+                        <a href="cars.html">Compact SUVs</a>
+                        <a href="cars.html">Luxury Sedans</a>
+                        <a href="cars.html">Sports Cars</a>
+                        <a href="cars.html">Electric Vehicles</a>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest deals and updates.</p>
+                    <form>
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rideez Car Rental. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

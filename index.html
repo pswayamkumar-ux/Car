@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rideez Car Rental - Premium car rental services with a wide selection of vehicles. Book your perfect ride today!">
+    <meta name="keywords" content="car rental, rent a car, vehicle rental, luxury cars, SUV rental">
+    <meta name="author" content="Rideez Car Rental">
+    <title>Rideez Car Rental - Premium Car Rental Services</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23f59e0b'/><text x='50' y='65' font-size='40' text-anchor='middle' fill='white'>R</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <span class="logo-text">Ride<span>ez</span></span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="cars.html" class="nav-link">Our Cars</a>
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </nav>
+                
+                <!-- Header CTA -->
+                <div class="header-cta">
+                    <a href="tel:+1234567890" class="header-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>+1 234 567 890</span>
+                    </a>
+                    <a href="cars.html" class="btn btn-primary">Book Now</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <div class="mobile-menu-header">
+                <span class="logo-text">Ride<span>ez</span></span>
+                <button id="closeMenu" class="mobile-menu-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="mobile-nav">
+                <a href="index.html" class="mobile-nav-link active">Home</a>
+                <a href="about.html" class="mobile-nav-link">About</a>
+                <a href="cars.html" class="mobile-nav-link">Our Cars</a>
+                <a href="services.html" class="mobile-nav-link">Services</a>
+                <a href="contact.html" class="mobile-nav-link">Contact</a>
+                <a href="cars.html" class="btn btn-primary" style="margin-top: 1rem;">Book Now</a>
+            </nav>
+        </div>
+        <div id="mobileMenuOverlay" class="mobile-menu-overlay"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero gradient-bg">
+        <div class="hero-bg-effects">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="section-badge section-badge-light">#1 Car Rental Service</span>
+                    <h1 class="hero-title">Find Your Perfect <span>Ride</span> Today</h1>
+                    <p class="hero-description">
+                        Experience the freedom of the road with our premium car rental services. 
+                        Wide selection, affordable prices, and exceptional service guaranteed.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="cars.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-car" style="margin-right: 0.5rem;"></i> Explore Cars
+                        </a>
+                        <a href="about.html" class="btn btn-outline btn-lg">
+                            <i class="fas fa-play" style="margin-right: 0.5rem;"></i> Learn More
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <h3>500+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h3>100+</h3>
+                            <p>Premium Cars</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h3>24/7</h3>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" alt="Luxury Car">
+                    <div class="hero-badge">
+                        <div class="hero-badge-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div>
+                            <h4>100% Insured</h4>
+                            <p>All vehicles covered</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Booking Form -->
+        <div class="booking-form-container">
+            <div class="container">
+                <div class="booking-form">
+                    <form class="booking-form-grid">
+                        <div class="form-group">
+                            <label>Pick-up Location</label>
+                            <div class="form-input-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <input type="text" class="form-input" placeholder="City or Airport">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Pick-up Date</label>
+                            <div class="form-input-wrapper">
+                                <i class="fas fa-calendar"></i>
+                                <input type="date" class="form-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Return Date</label>
+                            <div class="form-input-wrapper">
+                                <i class="fas fa-calendar"></i>
+                                <input type="date" class="form-input">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Car Type</label>
+                            <div class="form-input-wrapper">
+                                <i class="fas fa-car"></i>
+                                <select class="form-input">
+                                    <option>Select Type</option>
+                                    <option>Economy</option>
+                                    <option>SUV</option>
+                                    <option>Luxury</option>
+                                    <option>Sports</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-search" style="margin-right: 0.5rem;"></i> Search Cars
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Booking Form -->
+    <section class="mobile-booking-form">
+        <div class="booking-form">
+            <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--text-dark);">Book Your Ride</h3>
+            <form>
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <label>Pick-up Location</label>
+                    <input type="text" class="form-input" placeholder="City or Airport" style="padding-left: 1rem;">
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                    <div class="form-group">
+                        <label>Pick-up Date</label>
+                        <input type="date" class="form-input" style="padding-left: 1rem;">
+                    </div>
+                    <div class="form-group">
+                        <label>Return Date</label>
+                        <input type="date" class="form-input" style="padding-left: 1rem;">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <label>Car Type</label>
+                    <select class="form-input" style="padding-left: 1rem;">
+                        <option>Select Type</option>
+                        <option>Economy</option>
+                        <option>SUV</option>
+                        <option>Luxury</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+                    <i class="fas fa-search" style="margin-right: 0.5rem;"></i> Search Cars
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="section-padding" style="background: var(--gray-50); padding-top: 12rem;">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1449965408869-ebd5ad7f5b5a?w=600" alt="About Rideez">
+                    <div class="about-experience-badge">
+                        <h3>15+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <span class="section-badge">About Us</span>
+                    <h2 class="section-title">We Provide The Best Car Rental Experience</h2>
+                    <p style="color: var(--text-light); margin-bottom: 1.5rem; line-height: 1.8;">
+                        At Rideez, we're passionate about providing exceptional car rental services that exceed your expectations. 
+                        With over 15 years in the industry, we've built a reputation for reliability, quality, and customer satisfaction.
+                    </p>
+                    <p style="color: var(--text-light); margin-bottom: 2rem; line-height: 1.8;">
+                        Our fleet includes everything from economical compact cars to luxurious sedans and powerful SUVs. 
+                        Whether you're traveling for business or pleasure, we have the perfect vehicle for your needs.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>Quality Vehicles</h4>
+                                <p>Well-maintained fleet</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>Best Prices</h4>
+                                <p>Competitive rates</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>24/7 Support</h4>
+                                <p>Always available</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-check"></i>
+                            </div>
+                            <div>
+                                <h4>Free Cancellation</h4>
+                                <p>Flexible booking</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="about.html" class="btn btn-primary">
+                        Learn More <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cars Section -->
+    <section class="section-padding" style="background: var(--white);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <span class="section-badge">Our Fleet</span>
+                <h2 class="section-title">Explore Our Premium Cars</h2>
+                <p class="section-description">
+                    Choose from our wide selection of premium vehicles. Each car is thoroughly inspected 
+                    and maintained to ensure your safety and comfort.
+                </p>
+            </div>
+            
+            <div class="cars-grid">
+                <!-- Car Card 1 -->
+                <div class="car-card card card-hover" data-category="economy">
+                    <div class="car-card-image">
+                        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500" alt="Toyota Camry">
+                        <span class="car-card-badge popular">Popular</span>
+                    </div>
+                    <div class="car-card-content">
+                        <div class="car-card-header">
+                            <div>
+                                <h3 class="car-card-title">Toyota Camry</h3>
+                                <p class="car-card-type">Economy Sedan</p>
+                            </div>
+                            <div class="car-card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <div class="car-card-features">
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="car-card-footer">
+                            <div class="car-card-price">$45<span>/day</span></div>
+                            <a href="cars.html" class="btn btn-primary">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 2 -->
+                <div class="car-card card card-hover" data-category="suv">
+                    <div class="car-card-image">
+                        <img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=500" alt="Honda CR-V">
+                    </div>
+                    <div class="car-card-content">
+                        <div class="car-card-header">
+                            <div>
+                                <h3 class="car-card-title">Honda CR-V</h3>
+                                <p class="car-card-type">Compact SUV</p>
+                            </div>
+                            <div class="car-card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                        <div class="car-card-features">
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="car-card-footer">
+                            <div class="car-card-price">$65<span>/day</span></div>
+                            <a href="cars.html" class="btn btn-primary">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Car Card 3 -->
+                <div class="car-card card card-hover" data-category="luxury">
+                    <div class="car-card-image">
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=500" alt="BMW 5 Series">
+                        <span class="car-card-badge premium">Premium</span>
+                    </div>
+                    <div class="car-card-content">
+                        <div class="car-card-header">
+                            <div>
+                                <h3 class="car-card-title">BMW 5 Series</h3>
+                                <p class="car-card-type">Luxury Sedan</p>
+                            </div>
+                            <div class="car-card-rating">
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                        </div>
+                        <div class="car-card-features">
+                            <span><i class="fas fa-users"></i> 5 Seats</span>
+                            <span><i class="fas fa-gas-pump"></i> Petrol</span>
+                            <span><i class="fas fa-cog"></i> Auto</span>
+                            <span><i class="fas fa-snowflake"></i> AC</span>
+                        </div>
+                        <div class="car-card-footer">
+                            <div class="car-card-price">$120<span>/day</span></div>
+                            <a href="cars.html" class="btn btn-primary">Rent Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="cars.html" class="btn btn-outline-amber">
+                    View All Cars <i class="fas fa-arrow-right" style="margin-left: 0.5rem;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section-padding gradient-bg">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <span class="section-badge section-badge-light">Our Services</span>
+                <h2 class="section-title section-title-light">What We Offer</h2>
+                <p class="section-description section-description-light">
+                    We provide comprehensive car rental services designed to make your journey 
+                    comfortable, safe, and memorable.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Wide Selection</h3>
+                    <p>Choose from 100+ vehicles ranging from economy to luxury cars.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Airport Pickup</h3>
+                    <p>Convenient airport pickup and drop-off services available 24/7.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Chauffeur Service</h3>
+                    <p>Professional drivers available for business trips and special occasions.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Round-the-clock customer support for all your needs and emergencies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-padding" style="background: var(--white);">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 4rem;">
+                <span class="section-badge">Testimonials</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-description">
+                    Don't just take our word for it. Here's what our satisfied customers have to say about their experience with Rideez.
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card card-hover">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Excellent service! The car was clean, well-maintained, and the pickup process was incredibly smooth. Will definitely use Rideez again for my next trip."
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="John Smith">
+                        <div>
+                            <h4>John Smith</h4>
+                            <p>Business Traveler</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card card-hover">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Best car rental experience ever! Great prices, amazing selection of cars, and the customer support team was super helpful. Highly recommended!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Sarah Johnson">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <p>Tourist</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card card-hover">
+                    <div class="testimonial-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Rented a luxury car for my wedding anniversary. The car was spotless and made our special day even more memorable. Thank you, Rideez!"
+                    </p>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Michael Brown">
+                        <div>
+                            <h4>Michael Brown</h4>
+                            <p>Local Customer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding gradient-bg cta-section">
+        <div class="cta-bg-effects">
+            <div class="circle circle-1"></div>
+            <div class="circle circle-2"></div>
+        </div>
+        
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to Hit the Road?</h2>
+                <p class="cta-description">
+                    Book your perfect ride today and experience the freedom of the open road with Rideez Car Rental.
+                </p>
+                <div class="cta-buttons">
+                    <a href="cars.html" class="btn btn-primary btn-lg">
+                        <i class="fas fa-car" style="margin-right: 0.5rem;"></i> Book Now
+                    </a>
+                    <a href="tel:+1234567890" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone" style="margin-right: 0.5rem;"></i> Call Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer gradient-bg">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Company Info -->
+                <div class="footer-about">
+                    <a href="index.html" class="logo" style="margin-bottom: 1.5rem;">
+                        <div class="logo-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <span class="logo-text">Ride<span>ez</span></span>
+                    </a>
+                    <p>Your trusted partner for premium car rental services. Experience the freedom of the road with our wide selection of quality vehicles.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4>Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="cars.html">Our Cars</a>
+                        <a href="services.html">Services</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <!-- Car Types -->
+                <div>
+                    <h4>Car Types</h4>
+                    <div class="footer-links">
+                        <a href="cars.html">Economy Cars</a>
+                        <a href="cars.html">Compact SUVs</a>
+                        <a href="cars.html">Luxury Sedans</a>
+                        <a href="cars.html">Sports Cars</a>
+                        <a href="cars.html">Electric Vehicles</a>
+                    </div>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe to our newsletter for the latest deals and updates.</p>
+                    <form>
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Rideez Car Rental. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
